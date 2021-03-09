@@ -47,7 +47,7 @@ You can set the time an occurence to whatever you like. You'll find some help at
 
 ### 4. Setting up a Discord webhook.
 
-1. [Setup a webhook][webhook] in the desired Discord text channel
+1. [Setup a webhook](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks) in the desired Discord text channel
 2. Edit Line 3 of `vhserverbackup.sh` and set your webhook URL
 
 
