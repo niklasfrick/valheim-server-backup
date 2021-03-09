@@ -61,3 +61,4 @@ You can set the time an occurence to whatever you like. You'll find some help at
 
 ### Inspiration from
 * [ValheimBackupandNotifications](https://github.com/aremedis/ValheimBackupandNotifications) - Script for daily backups of Valheim Dedicated server, and sending notifications to Discord.
+* [Geekhead YouTube tutorial for Backups](https://www.youtube.com/watch?v=XejBIwBYTG8&t=84s)
