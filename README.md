@@ -27,6 +27,7 @@ chmod +x /usr/local/sbin/vhserverbackup.sh
 ### 2. Set world name
 
 1. Edit line 4 of `vhserverbackup.sh` and replace ENTERWORLDNAMEHERE with your world name to be backed up
+2. Edit <enter access token here> in line X to your access token for Google Drive. You'll find the tutorial here to get one: [Uploading files to Google Drive directly from the terminal using Curl](https://towardsdatascience.com/uploading-files-to-google-drive-directly-from-the-terminal-using-curl-2b89db28bb06)
 
 ### 3. Set up a crontab to automate execution
 
