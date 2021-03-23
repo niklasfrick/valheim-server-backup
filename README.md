@@ -10,6 +10,7 @@ Automatic Backup for your Valheim Server worlds with 30 day history on server, a
 * [Dedicated_Valheim_Server_Script](https://github.com/Nimdy/Dedicated_Valheim_Server_Script) - Valheim Installer and Menu System for managing your Valheim Dedicated Server. Supports Vanilla or Mod modes. Built on Ubuntu 20.04.
 
 2. [Google Drive Upload](https://github.com/labbots/google-drive-upload) from labbots.
+3. ZIP: `sudo apt install zip`
 
 ## Usage
 
