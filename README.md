@@ -57,7 +57,7 @@ You can set the time an occurence to whatever you like. You'll find some help at
 
 ## To-Dos
 
-* Upload backups to remote destination like gdrive
+* 
 
 ## Built With
 
