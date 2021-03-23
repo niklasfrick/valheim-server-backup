@@ -5,10 +5,11 @@ Automatic Backup for your Valheim Server worlds with 30 day history and automate
 
 ### Prerequisites
 
-This backup method uses the Dedicated Valheim Server Script from Nimdy:
+1. This backup method uses the Dedicated Valheim Server Script from Nimdy:
 
 * [Dedicated_Valheim_Server_Script](https://github.com/Nimdy/Dedicated_Valheim_Server_Script) - Valheim Installer and Menu System for managing your Valheim Dedicated Server. Supports Vanilla or Mod modes. Built on Ubuntu 20.04.
 
+2. [Google Drive Upload](https://github.com/labbots/google-drive-upload) from labbots.
 
 ## Usage
 
@@ -49,6 +50,9 @@ You can set the time an occurence to whatever you like. You'll find some help at
 
 1. [Setup a webhook](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks) in the desired Discord text channel
 2. Edit Line 3 of `vhserverbackup.sh` and set your webhook URL
+
+### 5. Set up Google Drive Upload: 
+[Link to repo](https://github.com/labbots/google-drive-upload)
 
 
 ## To-Dos
