@@ -44,3 +44,10 @@ sleep 30s
 
 # check if service is running and post to discord if running or not
 systemctl is-active --quiet valheimserver.service >/dev/null 2>&1 && /usr/local/sbin/discord.sh --webhook-url="${discordwebhook}" --text "Valheim Server back ONLINE! Happy gaming!" || /usr/local/sbin/discord.sh --webhook-url="${discordwebhook}" --text "Valheim Server not started. Please check..."
+
+sleep 30s
+
+# zip the backup and upload it to google drive
+zip -j /home/steam/backups/${now}/${now}.zip /home/steam/backups/${now}/*
+
+/root/.google-drive-upload/bin/gupload /home/steam/backups/${now}/${now}.zip
