@@ -26,14 +26,9 @@ chmod +x /usr/local/sbin/vhserverbackup.sh
 
 ### 2. Set world name
 
-1. Edit line 4 of `vhserverbackup.sh` and replace ENTERWORLDNAMEHERE with your world name to be backed up
+1. Edit line 4 of `vhserverbackup.sh` and replace ENTERWORLDNAMEHERE with your world name to be backed up 
 
-### 3. Google Drive Upload Settings
-
-1. Edit <enter access token here> in line 55 of `vhserverbackup.sh` to your access token for Google Drive. You'll find the tutorial here to get one: [Uploading files to Google Drive directly from the terminal using Curl](https://towardsdatascience.com/uploading-files-to-google-drive-directly-from-the-terminal-using-curl-2b89db28bb06)
-2. Edit line 57 of `vhserverbackup.sh` and set FOLDER_ID to your folder ID where you want the backup to be uploaded in Google Drive.
-
-### 4. Set up a crontab to automate execution
+### 3. Set up a crontab to automate execution
 
 1. Edit crontabs
 
@@ -50,7 +45,7 @@ crontab -e
 You can set the time an occurence to whatever you like. You'll find some help at [crontab.guru](https://crontab.guru/).
 
 
-### 5. Setting up a Discord webhook.
+### 4. Setting up a Discord webhook.
 
 1. [Setup a webhook](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks) in the desired Discord text channel
 2. Edit Line 3 of `vhserverbackup.sh` and set your webhook URL
