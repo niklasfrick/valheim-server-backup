@@ -62,6 +62,7 @@ You can set the time an occurence to whatever you like. You'll find some help at
 ## Built With
 
 * [discord.sh](https://github.com/ChaoticWeg/discord.sh) - Write-only command-line Discord webhook integration written in 100% Bash script
+* [google-drive-upload](https://github.com/labbots/google-drive-upload) - Bash scripts to upload files to google drive
 
 ### Inspiration from
 * [ValheimBackupandNotifications](https://github.com/aremedis/ValheimBackupandNotifications) - Script for daily backups of Valheim Dedicated server, and sending notifications to Discord.
