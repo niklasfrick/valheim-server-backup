@@ -30,9 +30,9 @@ systemctl stop valheimserver.service
 mkdir /home/steam/backups/${now}
 
 # copy the files
-cp /home/steam/.config/unity3d/IronGate/Valheim/worlds/${worldname}.db /home/steam/backups/${now}/${worldname}.db
+cp /home/steam/.config/unity3d/IronGate/Valheim/${worldname}/worlds/${worldname}.db /home/steam/backups/${now}/${worldname}.db
 
-cp /home/steam/.config/unity3d/IronGate/Valheim/worlds/${worldname}.fwl /home/steam/backups/${now}/${worldname}.fwl
+cp /home/steam/.config/unity3d/IronGate/Valheim/${worldname}/worlds/${worldname}.fwl /home/steam/backups/${now}/${worldname}.fwl
 
 # clear backups older than 30 days
 /usr/local/sbin/vhclearbackups.sh
