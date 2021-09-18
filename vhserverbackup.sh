@@ -22,7 +22,9 @@ sleep 1m
 /usr/local/sbin/discord.sh --webhook-url="${discordwebhook}" --text "Valheim Server stops now!"
 
 # Stop the Service
-systemctl stop valheimserver.service
+systemctl stop valheimserver_${worldname}.service
+
+sleep 1m
 
 # Create the Backup
 
@@ -38,12 +40,12 @@ cp /home/steam/.config/unity3d/IronGate/Valheim/${worldname}/worlds/${worldname}
 /usr/local/sbin/vhclearbackups.sh
 
 # Start the Service
-systemctl start valheimserver.service
+systemctl start valheimserver_${worldname}.service
 
 sleep 30s
 
 # check if service is running and post to discord if running or not
-systemctl is-active --quiet valheimserver.service >/dev/null 2>&1 && /usr/local/sbin/discord.sh --webhook-url="${discordwebhook}" --text "Valheim Server back ONLINE! Happy gaming!" || /usr/local/sbin/discord.sh --webhook-url="${discordwebhook}" --text "Valheim Server not started. Please check..."
+systemctl is-active --quiet valheimserver_${worldname}.service >/dev/null 2>&1 && /usr/local/sbin/discord.sh --webhook-url="${discordwebhook}" --text "Valheim Server back ONLINE! Happy gaming!" || /usr/local/sbin/discord.sh --webhook-url="${discordwebhook}" --text "Valheim Server not started. Please check..."
 
 sleep 30s
 
